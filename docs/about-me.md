@@ -2,7 +2,8 @@
 Name: Alice Eloide Bühler
 
 Hobbies; Wandern, Reisen, Kochen, Schwimmen und Gitarre spielen. Im allgemeinen Dinge, die mit und ohne meine Freunde spassmachen.
-Lieblingsspiel; Journey  
+Lieblingsspiel; Journey 
+
 Das Spiel fasziniert mich mit seinem unglaublich schönen artstyle und den kreativen aufgaben, sie zu lösen sind.  
 
 ![](reisen.jpeg)
