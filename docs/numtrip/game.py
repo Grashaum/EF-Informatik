@@ -1,14 +1,19 @@
-#def pprint(mat2d):
-#    for wahl in mat2d:
-#        print(' ',wahl, end = '\n')
-        
+board = [
+    [2, 4, 1, 8, 8],
+    [4, 2, 8, 2, 1],
+    [4, 4, 8, 4, 2],
+    [2, 8, 1, 4, 1],
+    [2, 4, 4, 4, 4]
+]
 
-#pprint([[1, 2, 3], [4, 5, 6],[7, 8, 9]])
-# print('!',' ',' ','!')
-spielfeld = [[1, 2, 4, 16, 2], [2, 4, 1, 1, 2], [1, 1, 1, 1, 16]]
+for zeile in board: #board wurde in den letzten Zeilen definiert
+    for zelle in zeile:#Zellen und zeilen sind teile des Spielfelds
+        print(' -', end='')#diese Zeile soll enden, wenn es keine zellen mehr in der Zeile darunter hat; für jede Zelle einen Strich
+    print(' ')
+    for zelle in zeile:
+        print(f'|{zelle}', end='')# print neue zeile? auf jedenfall kommt vor jede zelle ein |
+    print('|')#Am Schluss von jeder Zeile kommt noch ein |
 
-for wert in spielfeld:
-    print('*-------+-------+-------+-------+-------*')
-    print('|', ' ', ' ', ' ', '|', ' ', ' ', ' ', '|', ' ', ' ', ' ', '|', ' ', ' ', ' ', '|', ' ', ' ', ' ', '|')
-    print(wert)
-#wert(, )
+for zelle in board[0]:
+    print(' -', end='')# dieser teil ist noch der abschluss; die letzte Zeile wird seperat beschrieben
+print(' ')
