@@ -36,7 +36,7 @@ def gewonnen():
 
 def game_over():  
     return gewonnen()
-    #len
+    #len of attempts zählen
 
 def play():
     while not game_over():
@@ -45,7 +45,7 @@ def play():
         print(buchstabe)
         show()
     if gewonnen():
-        print("...")
+        print('...:)')
     else:
         print("!!!")
 play()
