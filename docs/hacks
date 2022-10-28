@@ -3,7 +3,7 @@
 
 
 # matrix = [
-    [i * 10 + j for j in range(10)] for i in range(3)
+[i * 10 + j for j in range(10)]; for i in range(3)
 # ]
 # print(matrix)
 # -> 1. durchgang i= 0 darum 0*10 = 0+(zahlen von 1-9) usw
