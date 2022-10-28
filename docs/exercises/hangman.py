@@ -32,9 +32,11 @@ def gewonnen():
     for buchstabe in gesucht:
         if buchstabe not in gefunden:
             return False
+    return True
 
-def game_over():
-    return False
+def game_over():  
+    return gewonnen()
+    #len
 
 def play():
     while not game_over():

@@ -1,9 +1,12 @@
-# cntrl + lerschlag -> alle möglichen dokumente werden vorgeschlagen
-# 5hoch2 = 5**2
+'''
+cntrl + lerschlag -> alle möglichen dokumente werden vorgeschlagen
+5hoch2 = 5**2
 
 
-# matrix = [
+matrix = [
 [i * 10 + j for j in range(10)]; for i in range(3)
-# ]
-# print(matrix)
-# -> 1. durchgang i= 0 darum 0*10 = 0+(zahlen von 1-9) usw
+]
+ print(matrix)
+ -> 1. durchgang i= 0 darum 0*10 = 0+(zahlen von 1-9) usw
+variabeln umbenennen: draufklicken und ctrl+f2 drücken
+'''
