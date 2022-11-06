@@ -10,14 +10,16 @@ def spielfeld():
     for zeile in board: #board wurde in den letzten Zeilen definiert
         
         for zelle in zeile:#Zellen und zeilen sind teile des Spielfelds
-            print(' -', end='')#diese Zeile soll enden, wenn es keine zellen mehr in der Zeile darunter hat; für jede Zelle einen Strich
+            print(' --', end='')#diese Zeile soll enden, wenn es keine zellen mehr in der Zeile darunter hat; für jede Zelle einen Strich
         print(' ')
         for zelle in zeile:
             print(f'|{zelle}', end='')# print neue zeile? auf jedenfall kommt vor jede zelle ein |
-        print('|')#Am Schluss von jeder Zeile kommt noch ein |
+            if zelle < 10:
+                print(' ', end='')
+        print('|')#Am Schluss von jeder Zeile kommt ein |
 
     for zelle in board[0]:
-        print(' -', end='')# dieser teil ist noch der abschluss; die letzte Zeile wird seperat beschrieben
+        print(' --', end='')# dieser teil ist noch der abschluss; die letzte Zeile wird seperat beschrieben
     print(' ')
 
 spielfeld()
