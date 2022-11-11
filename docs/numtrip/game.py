@@ -15,7 +15,7 @@ def spielfeld():
         for zelle in zeile:
             print(f'|{zelle}', end='')# print neue zeile? auf jedenfall kommt vor jede zelle ein |
             if zelle < 10:
-                print(' ', end='')
+                print(' ', end='')# zahlen werden angepasst; die zehn tanzt nich aus der Reihe
         print('|')#Am Schluss von jeder Zeile kommt ein |
 
     for zelle in board[0]:
