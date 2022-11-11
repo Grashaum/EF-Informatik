@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Lern Blog Blog</title>
+        <link>https://Grashaum.github.io/EF-Informatik/</link>
+        <description>Lern Blog Blog</description>
+        <lastBuildDate>Fri, 26 Aug 2022 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>de</language>
+        <item>
+            <title><![CDATA[wiedereinstieg-python]]></title>
+            <link>https://Grashaum.github.io/EF-Informatik/2022/08/26/wiedereinstieg-python</link>
+            <guid>/2022/08/26/wiedereinstieg-python</guid>
+            <pubDate>Fri, 26 Aug 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[In dieser Lektion konnte ich meine kenntnisse von python etwas auffrischen]]></description>
+            <content:encoded><![CDATA[<p>In dieser Lektion konnte ich meine kenntnisse von python etwas auffrischen
+Ich war zuvor schon mehrere male damit im Kontakt; in der Oberstufe, in der Freizeit (mein Bruder hat mir sehr viel erzählt und auch beigebracht) und in den ersten zwei Gymer-Jahren.</p><p>Besonders stolz bin ich auf meine animation des hauses : )
+Mind you, it was a bit difficult to guess the required angles and lengths.
+<img loading="lazy" src="/EF-Informatik/assets/images/python,turtle-5405943a4b3412440c82aa77301912b0.PNG" width="1046" height="822" class="img_ev3q">
+Also, I've noticed that programming English seems to be rather American English, because I wrote colo<em>u</em>r first and not color like I'm supposed to.</p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://Grashaum.github.io/EF-Informatik/</id>
+    <title>Lern Blog Blog</title>
+    <updated>2022-08-26T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://Grashaum.github.io/EF-Informatik/"/>
+    <subtitle>Lern Blog Blog</subtitle>
+    <icon>https://Grashaum.github.io/EF-Informatik/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[wiedereinstieg-python]]></title>
+        <id>/2022/08/26/wiedereinstieg-python</id>
+        <link href="https://Grashaum.github.io/EF-Informatik/2022/08/26/wiedereinstieg-python"/>
+        <updated>2022-08-26T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[In dieser Lektion konnte ich meine kenntnisse von python etwas auffrischen]]></summary>
+        <content type="html"><![CDATA[<p>In dieser Lektion konnte ich meine kenntnisse von python etwas auffrischen
+Ich war zuvor schon mehrere male damit im Kontakt; in der Oberstufe, in der Freizeit (mein Bruder hat mir sehr viel erzählt und auch beigebracht) und in den ersten zwei Gymer-Jahren.</p><p>Besonders stolz bin ich auf meine animation des hauses : )
+Mind you, it was a bit difficult to guess the required angles and lengths.
+<img loading="lazy" src="/EF-Informatik/assets/images/python,turtle-5405943a4b3412440c82aa77301912b0.PNG" width="1046" height="822" class="img_ev3q">
+Also, I've noticed that programming English seems to be rather American English, because I wrote colo<em>u</em>r first and not color like I'm supposed to.</p>]]></content>
+    </entry>
+</feed>
