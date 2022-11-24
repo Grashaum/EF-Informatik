@@ -1,7 +1,8 @@
 '''
+ds biud per drag&drop i ordner tue
 cntrl + lerschlag -> alle möglichen dokumente werden vorgeschlagen
-5hoch2 = 5**2
 
+5hoch2 = 5**2
 
 matrix = [
 [i * 10 + j for j in range(10)]; for i in range(3)
