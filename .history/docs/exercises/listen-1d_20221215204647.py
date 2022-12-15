@@ -63,3 +63,7 @@ print(noten)
 # 14) Liste mit Strings
 noten =['gut', 'erfüllt', 'mangelhaft', 'erfüllt']
 print(noten)
+
+Name = ‘Maria’
+For Buchstabe in Name:
+Print(Buchstabe, end=’😊’)
