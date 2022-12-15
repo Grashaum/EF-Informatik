@@ -10,6 +10,4 @@ matrix = [
  print(matrix)
  -> 1. durchgang i= 0 darum 0*10 = 0+(zahlen von 1-9) usw
 variabeln umbenennen: draufklicken und ctrl+f2 drücken
-
-windows-taste+k = bluetooth geräte verbinden
 '''
