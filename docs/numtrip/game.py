@@ -85,7 +85,9 @@ def zellen_kombination():
         fill4(x, y - 1, alteFarbe, neueFarbe)  # oben
         fill4(x + 1, y, alteFarbe, neueFarbe)  # rechts
         fill4(x - 1, y, alteFarbe, neueFarbe)  # links
-    gebraucht: koordinaten    
+    gebraucht: koordinaten  
+        if pixel == (gleiche zahl wie ausgewähltes feld)
+        set pixel (anstatt alte zahl ' '(leerschlag))
     '''
 
 def play():
