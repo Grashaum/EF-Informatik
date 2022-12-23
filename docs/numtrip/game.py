@@ -78,7 +78,14 @@ def auswerten(zeile, spalte):
 
 def zellen_kombination():
     '''
-    noch machen
+    def fill4(x, y, alteFarbe, neueFarbe):
+    if getPixel(x, y) == alteFarbe:
+        setPixel(x, y, neueFarbe)
+        fill4(x, y + 1, alteFarbe, neueFarbe)  # unten
+        fill4(x, y - 1, alteFarbe, neueFarbe)  # oben
+        fill4(x + 1, y, alteFarbe, neueFarbe)  # rechts
+        fill4(x - 1, y, alteFarbe, neueFarbe)  # links
+    gebraucht: koordinaten    
     '''
 
 def play():
