@@ -14,3 +14,8 @@ windows-taste+k = bluetooth geräte verbinden
 Alt + F4 = auswahl herunterfahren (nur wenn alle tabs geschlossen sind)
 
 ctrl + klick = geht zu definition
+
+''.join(sorted('potter')) --> potter alphabetisch sortieren :)
+    ''.join--> kombiniert die liste aus strings
+
+'! gimme a '.join(sorted('potter')) + '! potter!'--> man kann strings + rechnen
