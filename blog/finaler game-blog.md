@@ -21,5 +21,5 @@ Obschon wir sehr viel unterstützung und Beispiel-codes zur verfügung hatten, w
 (Das zurechtfinden mit den verschiedenen Tools ging sehr schnell.)
 ## Tipps 
 für andere EF-Schüler:innen, die das Spiel auch umsetzen möchten.
-
+Ungeniert Fragen stellen und mit mitschüler:innen austauschen für individuelle Lösungs-ansätze
 ## Allenfalls Link zum Spiel
