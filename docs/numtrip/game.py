@@ -74,7 +74,7 @@ def auswerten(zeile, spalte):
     spalte = buchstaben.index(spalte.upper())
     zeile = int(zeile) - 1
     print(zeile)
-    board[zeile][spalte] = 0
+    board[zeile][spalte] = 0# zeile und spalte werden auf null gesetzt; wird 'geleert'
 
 def zellen_kombination():
     '''
