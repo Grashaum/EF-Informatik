@@ -1,3 +1,4 @@
+import random
 board = [
         [2, 4, 8, 8, 8, 8],
         [4, 2, 8, 2, 1, 4],
@@ -52,49 +53,39 @@ def text_input(text):
 
 def eingabe():
     zeile = input('Geben Sie die Zeile des Feldes ein (Form: Zahl(1-5)): ')
-    spalte = input('Geben Sie die spalte des Feldes ein (Form: Buchst.(a-f)): ')
     while not verify_input(zeile):
         zeile = input('Geben Sie die Zeile des Feldes ein (Form: Zahl(1-5)): ')
-    produkt = verify_input(zeile)
-    if produkt:
-        print('Produkt', produkt)
-    else:
-        print('Fehlerhafte Eingabe!')
-
+    spalte = input('Geben Sie die Spalte des Feldes ein (Form: Buchst.(a-f)): ')
     while not text_input(spalte):
-        spalte = input('Geben Sie die spalte des Feldes ein (Form: Buchst.(a-f)): ')
-    if text_input(spalte):
-        print('Produkt', text_input(spalte))
-    else:
-        print('Fehlerhafte Eingabe!')
+        spalte = input('Geben Sie die Spalte des Feldes ein (Form: Buchst.(a-f)): ')
     return (zeile, spalte)
+
 
 def auswerten(zeile, spalte):
     buchstaben = ['A', 'B', 'C', 'D', 'E', 'F']
-    spalte = buchstaben.index(spalte.upper())
+    spalte = buchstaben.index(spalte.upper()) #string wird in zahl umgewandelt
     zeile = int(zeile) - 1
-    print(zeile)
-    board[zeile][spalte] = 0# zeile und spalte werden auf null gesetzt; wird 'geleert'
+    nachbarzellen(zeile, spalte)
+    board[zeile][spalte] *= 2 # zeile und spalte werden auf null gesetzt; wird 'geleert'
 
-def zellen_kombination():
-    '''
-    def fill4(x, y, alteFarbe, neueFarbe):
-    if getPixel(x, y) == alteFarbe:
-        setPixel(x, y, neueFarbe)
-        fill4(x, y + 1, alteFarbe, neueFarbe)  # unten
-        fill4(x, y - 1, alteFarbe, neueFarbe)  # oben
-        fill4(x + 1, y, alteFarbe, neueFarbe)  # rechts
-        fill4(x - 1, y, alteFarbe, neueFarbe)  # links
-    gebraucht: koordinaten  
-        if pixel == (gleiche zahl wie ausgewähltes feld)
-        set pixel (anstatt alte zahl ' '(leerschlag))
-    '''
+def nachbarzellen(zeile, spalte):
+    zahl = board[zeile][spalte] 
+    if not zeile == 4 and board[zeile +1][spalte] == zahl: # +1 weil man in der liste boart 'vorwärts'geht und nicht nach oben
+        nachbarzellen(zeile +1, spalte)
+        board[zeile +1][spalte] = random.choice([1,2,4,8])
+    # das selbe noch in alle richtungen
+def spielende():
+    for zeile in board:
+        for zelle in zeile:
+            if zelle >= 100:
+                print('Sie haben gewonnen!!')
+                return True
+    return False
 
 def play():
-    while True:
+    while not spielende():
         spielfeld()
         zeile, spalte = eingabe()
         auswerten(zeile, spalte)
-        spielfeld()
 
 play()
