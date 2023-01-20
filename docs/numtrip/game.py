@@ -84,15 +84,14 @@ def drop_cells(zeile, spalte):
             while not index <= 0 and board [index][spalten_idx] == 0:
                 index = index -1
             board[zeilen_idx][spalten_idx] = board[index][spalten_idx] # die gefundene Zelle wird mit der alten gewechhselt
-            board[index][spalten_idx] = random.choice([2, 4, 8]) # die alte Zelle wird auf null gesetzt
-    fill_emptycells(zeile, spalte)
+            board[index][spalten_idx] = 0 # die alte Zelle wird auf null gesetzt
+    fill_emptycells()
 
-def fill_emptycells(zeile, spalte):
-    pass
-    for zeile in board:
-        for zelle in zeile:
-            if zelle == 0:
-                board[zeile][spalte] = random.choice(1, 2, 4, 8)
+def fill_emptycells():
+    for zeilen_nr in range(0, 5):
+        for palten_nr in range (0, 6):
+            if board[zeilen_nr][palten_nr] == 0:
+                board[zeilen_nr][palten_nr] = random.choice([1, 2, 4, 8])
 
 def spielende():
     for zeile in board:
