@@ -13,7 +13,7 @@ vs code, damit man eine gute Darstellung hat
 ## Aktualisiertes Top-Down-Diagramm
  für das Spiel mit den von Ihnen geschriebenen Funktionen und deren Zusammenspiel.
 
-## Erklärung eines algorithmischen Konzepts, das Sie in Ihrem Spiel verwendet haben
+## Erklärung eines algorithmischen Konzepts
 In meinem spiel habe ich das Ende so definiert, dass man gewonnen hat wenn man auf einem Feld hundert erreicht hat. Dafür muss das Programm nach jeder Runde überprüfen ob eine der Zellen das Ziel schon erreicht hat. Solange die Funktion Spielende False rückmeldet, geht das Spiel weiter.
 ![](Spielende.PNG)
 
@@ -22,5 +22,5 @@ Obschon wir sehr viel unterstützung und Beispiel-codes zur verfügung hatten, w
 (Das zurechtfinden mit den verschiedenen Tools ging sehr schnell.)
 ## Tipps 
 (für andere EF-Schüler:innen, die das Spiel auch umsetzen möchten)
-Ungeniert Fragen stellen und mit mitschüler:innen austauschen für individuelle Lösungs-ansätze
+Ungeniert Fragen stellen und mit Mitschüler:innen austauschen für individuelle Lösungs-ansätze.
 ## Allenfalls Link zum Spiel
