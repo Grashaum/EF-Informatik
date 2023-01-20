@@ -14,7 +14,7 @@ vs code, damit man eine gute Darstellung hat
  für das Spiel mit den von Ihnen geschriebenen Funktionen und deren Zusammenspiel.
 
 ## Erklärung eines algorithmischen Konzepts, das Sie in Ihrem Spiel verwendet haben
-In meinem spiel habe ich das Ende so definiert, dass man gewonnen hat wenn man auf einem Feld hundert erreicht hat
+In meinem spiel habe ich das Ende so definiert, dass man gewonnen hat wenn man auf einem Feld hundert erreicht hat. Dafür muss das Programm nach jeder Runde überprüfen ob eine der Zellen das Ziel schon erreicht hat. Solange die Funktion Spielende False rückmeldet, geht das Spiel weiter.
 ![](Spielende.PNG)
 
 ## Grösste Herausforderungen
