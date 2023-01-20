@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Grashaum.github.io/EF-Informatik/</id>
     <title>Lern Blog Blog</title>
-    <updated>2023-01-20T14:35:36.000Z</updated>
+    <updated>2023-01-20T14:43:27.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Grashaum.github.io/EF-Informatik/"/>
     <subtitle>Lern Blog Blog</subtitle>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[2.12.2022]]></title>
         <id>/2.12.2022</id>
         <link href="https://Grashaum.github.io/EF-Informatik/2.12.2022"/>
-        <updated>2023-01-20T14:35:36.000Z</updated>
+        <updated>2023-01-20T14:43:27.000Z</updated>
         <summary type="html"><![CDATA[(Auftrag, Herr Hofer ist krank 🤒)]]></summary>
         <content type="html"><![CDATA[<p>(Auftrag, Herr Hofer ist krank 🤒)</p><p>Benutzereingaben -
 besprechen Sie in 2-3er Gruppen, wie Sie Ihre Benutzereingabe implementiert haben. Versuchen Sie auch, sich gegenseitig zu helfen und in den Code reinzudenken, wenn es noch Probleme gibt</p><p>Selbständig weiterarbeiten an Numtrip:
@@ -25,7 +25,7 @@ ev. 👉 Felder Auffüllen</p><p>Wichtig: In den letzten 10-15 Minuten halten Si
         <title type="html"><![CDATA[Numtrip-blog]]></title>
         <id>/Numtrip-blog</id>
         <link href="https://Grashaum.github.io/EF-Informatik/Numtrip-blog"/>
-        <updated>2023-01-20T14:35:36.000Z</updated>
+        <updated>2023-01-20T14:43:27.000Z</updated>
         <summary type="html"><![CDATA[Benutzeringabe]]></summary>
         <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="benutzeringabe">Benutzeringabe<a class="hash-link" href="#benutzeringabe" title="Direkter Link zur Überschrift">​</a></h3><p>Als 1. habe ich mir ein Konzept überlegt, die Koordinaten eines bestimmten Feldes zu definieren. Ich bin auf Koordinaten aus Zahlen und Buchstaben gekommen. So ist es für mich persöhnlich praktischer, die Zeilen und Spalten zu unterscheiden (Spalten: Buchst., Zeilen: Zahlen)</p><p>Die Beiden eingaben müssen noch validiert werden:
 dafür habe ich mich entschieden, für beide eine einzelne Funktion zu schreiben, was für einige schwierigkeiten geführt hat, da ich die ganze formel zweimal schreiben musste... es hat nach ein paar versuchen jedoch geklappt.</p><p>in der Funktion auswerten werden die Buchstaben in Zahlen umbewandelt</p><blockquote><p>def auswerten(zeile, spalte):</p><p>   buchstaben = <!-- -->['A', 'B', 'C', 'D', 'E', 'F']</p><p>   spalte = buchstaben.index(spalte.upper())
@@ -35,13 +35,13 @@ zeile = int(zeile) - 1</p><p>   print(zeile)</p><p>   board<!-- -->[zeile][spalt
         <title type="html"><![CDATA[Finaler Blog-Beitrag]]></title>
         <id>/finaler game-blog</id>
         <link href="https://Grashaum.github.io/EF-Informatik/finaler game-blog"/>
-        <updated>2023-01-20T14:35:36.000Z</updated>
+        <updated>2023-01-20T14:43:27.000Z</updated>
         <summary type="html"><![CDATA[Ziel des Spiels]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ziel-des-spiels">Ziel des Spiels<a class="hash-link" href="#ziel-des-spiels" title="Direkter Link zur Überschrift">​</a></h2><p>Unterhaltung, das finale Ziel ist es, 2048 Punkte zu erreichen.
 Das geht dadurch, dass die Zahlen immer adddiert werden wenn sie angeklickt werden.
 Mit etwas strategie kann man die immer höheren Zahlen addieren. </p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="voraussetzung">Voraussetzung:<a class="hash-link" href="#voraussetzung" title="Direkter Link zur Überschrift">​</a></h2><p>Was muss ich installieren, um das Spiel zu starten?
 Python (version 3.1) Damit der syntax funktioniert
-vs code, damit man eine gute Darstellung hat</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="aktualisiertes-top-down-diagramm">Aktualisiertes Top-Down-Diagramm<a class="hash-link" href="#aktualisiertes-top-down-diagramm" title="Direkter Link zur Überschrift">​</a></h2><p> für das Spiel mit den von Ihnen geschriebenen Funktionen und deren Zusammenspiel.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="erklärung-eines-algorithmischen-konzepts-das-sie-in-ihrem-spiel-verwendet-haben">Erklärung eines algorithmischen Konzepts, das Sie in Ihrem Spiel verwendet haben<a class="hash-link" href="#erklärung-eines-algorithmischen-konzepts-das-sie-in-ihrem-spiel-verwendet-haben" title="Direkter Link zur Überschrift">​</a></h2><p>In meinem spiel habe ich das Ende so definiert, dass man gewonnen hat wenn man auf einem Feld hundert erreicht hat
+vs code, damit man eine gute Darstellung hat</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="aktualisiertes-top-down-diagramm">Aktualisiertes Top-Down-Diagramm<a class="hash-link" href="#aktualisiertes-top-down-diagramm" title="Direkter Link zur Überschrift">​</a></h2><p> für das Spiel mit den von Ihnen geschriebenen Funktionen und deren Zusammenspiel.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="erklärung-eines-algorithmischen-konzepts-das-sie-in-ihrem-spiel-verwendet-haben">Erklärung eines algorithmischen Konzepts, das Sie in Ihrem Spiel verwendet haben<a class="hash-link" href="#erklärung-eines-algorithmischen-konzepts-das-sie-in-ihrem-spiel-verwendet-haben" title="Direkter Link zur Überschrift">​</a></h2><p>In meinem spiel habe ich das Ende so definiert, dass man gewonnen hat wenn man auf einem Feld hundert erreicht hat. Dafür muss das Programm nach jeder Runde überprüfen ob eine der Zellen das Ziel schon erreicht hat. Solange die Funktion Spielende False rückmeldet, geht das Spiel weiter.
 <img loading="lazy" src="/EF-Informatik/assets/images/Spielende-35a9e47d53fd1023986fa67df495a5c7.PNG" width="583" height="225" class="img_ev3q"></p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="grösste-herausforderungen">Grösste Herausforderungen<a class="hash-link" href="#grösste-herausforderungen" title="Direkter Link zur Überschrift">​</a></h2><p>Obschon wir sehr viel unterstützung und Beispiel-codes zur verfügung hatten, war unsere eigene Kreativität und know-how gefragt und da dies nicht immer vorhanden war, habe ich viel unterstützung gebraucht vom Lehrer und verschiedenen Kollegen, die mehr erfahrung haben als ich.
 (Das zurechtfinden mit den verschiedenen Tools ging sehr schnell.)</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="tipps">Tipps<a class="hash-link" href="#tipps" title="Direkter Link zur Überschrift">​</a></h2><p>(für andere EF-Schüler:innen, die das Spiel auch umsetzen möchten)
 Ungeniert Fragen stellen und mit mitschüler:innen austauschen für individuelle Lösungs-ansätze</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="allenfalls-link-zum-spiel">Allenfalls Link zum Spiel<a class="hash-link" href="#allenfalls-link-zum-spiel" title="Direkter Link zur Überschrift">​</a></h2>]]></content>
