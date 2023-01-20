@@ -1,5 +1,5 @@
 ds biud per drag&drop i ordner tue
-cntrl + lerschlag -> alle möglichen dokumente werden vorgeschlagen
+![](cntrl + lerschlag) -> alle möglichen dokumente werden vorgeschlagen
 
 5hoch2 = 5**2
 
