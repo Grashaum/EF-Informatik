@@ -76,25 +76,23 @@ def nachbarzellen(zeile, spalte): #überprüfung der Nachbarszellen
         nachbarzellen(zeile -1, spalte)
     if not zeile == 0 and board[zeile][spalte -1] == zahl:
         nachbarzellen(zeile, spalte -1)
-
+    drop_cells(zeile, spalte)
 def drop_cells(zeile, spalte):
-    old_number = board[zeile][spalte]
-    place_zeile = 4
-    for zeile in board[-1::-1]:
-        place_cell = 4
-        for zelle in zeile[-1::-1]:
-            if zelle == 0:
-                index = place_zeile
-                while not index <= 0 and board [index][place_cell] == 0:
-                    index = index -1
-                board[place_zeile][place_cell] = board[index][place_cell] # die gefundene Zelle wird mit der alten gewechhselt
-                board[index][place_cell] = 0 # die alte Zelle wird auf null gesetzt
-            place_cell = place_cell -1
-        place_zeile = place_zeile -1
-            
+    for zeilen_idx in [4, 3, 2, 1, 0]:
+        for spalten_idx in [0, 1, 2, 3, 4, 5]:
+            index = zeilen_idx
+            while not index <= 0 and board [index][spalten_idx] == 0:
+                index = index -1
+            board[zeilen_idx][spalten_idx] = board[index][spalten_idx] # die gefundene Zelle wird mit der alten gewechhselt
+            board[index][spalten_idx] = random.choice([2, 4, 8]) # die alte Zelle wird auf null gesetzt
+    fill_emptycells(zeile, spalte)
 
-def fill_emptycells():
+def fill_emptycells(zeile, spalte):
     pass
+    for zeile in board:
+        for zelle in zeile:
+            if zelle == 0:
+                board[zeile][spalte] = random.choice(1, 2, 4, 8)
 
 def spielende():
     for zeile in board:
