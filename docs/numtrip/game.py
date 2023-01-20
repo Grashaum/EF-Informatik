@@ -70,17 +70,30 @@ def nachbarzellen(zeile, spalte): #überprüfung der Nachbarszellen
     board[zeile][spalte] = 0
     if not zeile == 4 and board[zeile +1][spalte] == zahl: # +1 weil man in der liste boart 'vorwärts'geht und nicht nach oben
         nachbarzellen(zeile +1, spalte)
-
     if not spalte == 5 and board[zeile][spalte +1] == zahl:
         nachbarzellen(zeile, spalte +1)
-
     if not zeile == 0 and board[zeile -1][spalte] == zahl: 
         nachbarzellen(zeile -1, spalte)
-
     if not zeile == 0 and board[zeile][spalte -1] == zahl:
         nachbarzellen(zeile, spalte -1)
 
-def floodfill():
+def drop_cells(zeile, spalte):
+    old_number = board[zeile][spalte]
+    place_zeile = 4
+    for zeile in board[-1::-1]:
+        place_cell = 4
+        for zelle in zeile[-1::-1]:
+            if zelle == 0:
+                index = place_zeile
+                while not index <= 0 and board [index][place_cell] == 0:
+                    index = index -1
+                board[place_zeile][place_cell] = board[index][place_cell] # die gefundene Zelle wird mit der alten gewechhselt
+                board[index][place_cell] = 0 # die alte Zelle wird auf null gesetzt
+            place_cell = place_cell -1
+        place_zeile = place_zeile -1
+            
+
+def fill_emptycells():
     pass
 
 def spielende():
