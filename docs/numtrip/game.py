@@ -1,8 +1,8 @@
 import random
 board = [
-        [2, 4, 8, 8, 8, 8],
+        [2, 4, 8, 8, 8, 4],
         [4, 2, 8, 2, 1, 4],
-        [4, 4, 8, 4, 2, 2],
+        [4, 4, 8, 4, 2, 4],
         [2, 8, 8, 4, 1, 2],
         [2, 4, 4, 4, 16, 4]
     ]
@@ -33,7 +33,6 @@ def spielfeld():
         print(' --', end='')# dieser teil ist noch der abschluss; die letzte Zeile wird seperat beschrieben
     print('')
 
-
 def verify_input(zeile):
     if not zeile.isnumeric():
         print('Die Ziffern müssen Zahlen sein!')
@@ -41,7 +40,7 @@ def verify_input(zeile):
     else:
         return True
     
-def text_input(text):
+def text_input(text):# es wird validiert ob der Text auch wirklich Text ist
     text = text.upper().strip()
     for h in text:
         if h not in 'ABCDEF':
@@ -49,7 +48,6 @@ def text_input(text):
             return False
         else:
             return True
-
 
 def eingabe():
     zeile = input('Geben Sie die Zeile des Feldes ein (Form: Zahl(1-5)): ')
@@ -60,20 +58,31 @@ def eingabe():
         spalte = input('Geben Sie die Spalte des Feldes ein (Form: Buchst.(a-f)): ')
     return (zeile, spalte)
 
-
 def auswerten(zeile, spalte):
     buchstaben = ['A', 'B', 'C', 'D', 'E', 'F']
     spalte = buchstaben.index(spalte.upper()) #string wird in zahl umgewandelt
     zeile = int(zeile) - 1
     nachbarzellen(zeile, spalte)
-    board[zeile][spalte] *= 2 # zeile und spalte werden auf null gesetzt; wird 'geleert'
+    board[zeile][spalte] = 0# zeile und spalte werden auf null gesetzt; wird 'geleert'
 
-def nachbarzellen(zeile, spalte):
+def nachbarzellen(zeile, spalte): #überprüfung der Nachbarszellen
     zahl = board[zeile][spalte] 
+    board[zeile][spalte] = 0
     if not zeile == 4 and board[zeile +1][spalte] == zahl: # +1 weil man in der liste boart 'vorwärts'geht und nicht nach oben
         nachbarzellen(zeile +1, spalte)
-        board[zeile +1][spalte] = random.choice([1,2,4,8])
-    # das selbe noch in alle richtungen
+
+    if not spalte == 5 and board[zeile][spalte +1] == zahl:
+        nachbarzellen(zeile, spalte +1)
+
+    if not zeile == 0 and board[zeile -1][spalte] == zahl: 
+        nachbarzellen(zeile -1, spalte)
+
+    if not zeile == 0 and board[zeile][spalte -1] == zahl:
+        nachbarzellen(zeile, spalte -1)
+
+def floodfill():
+    pass
+
 def spielende():
     for zeile in board:
         for zelle in zeile:
