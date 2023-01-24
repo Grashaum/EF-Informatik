@@ -34,7 +34,7 @@ def spielfeld():
     print('')
 
 def verify_input(zeile):
-    if not zeile.isnumeric():
+    if not zeile.isnumeric() or not 5 >= int(zeile) >= 0:
         print('Die Ziffern müssen Zahlen sein!')
         return False
     else:
@@ -56,17 +56,33 @@ def eingabe():
     spalte = input('Geben Sie die Spalte des Feldes ein (Form: Buchst.(a-f)): ')
     while not text_input(spalte):
         spalte = input('Geben Sie die Spalte des Feldes ein (Form: Buchst.(a-f)): ')
-    return (zeile, spalte)
-
-def auswerten(zeile, spalte):
     buchstaben = ['A', 'B', 'C', 'D', 'E', 'F']
     spalte = buchstaben.index(spalte.upper()) #string wird in zahl umgewandelt
     zeile = int(zeile) - 1
+    return (zeile, spalte)
+
+def feldauswahl_erlaubt(zeile, spalte):
+    if (spalte + 1) <= 5:
+        if board[zeile][spalte] == board[zeile][spalte + 1]:
+            return True
+    if (spalte - 1) >= 0:
+        if board[zeile][spalte] == board[zeile][spalte - 1]:
+            return True
+    if (zeile + 1) <= 4:
+        if board[zeile][spalte] == board[zeile + 1][spalte]:
+            return True
+    if (zeile - 1) >= 0:
+        if board[zeile][spalte] == board[zeile - 1][spalte]:
+            return True
+    print('Das ausgewählte Feld muss Nachbaren haben')
+    return False
+
+def auswerten(zeile, spalte):
+    #while not feldauswahl_erlaubt(zeile, spalte):
+        #eingabe()
     vorherige_zahl = board[zeile][spalte]
     nachbarzellen(zeile, spalte, vorherige_zahl)
     return zeile, spalte, vorherige_zahl
-    #malzwei = 77
-    # zeile und spalte werden auf null gesetzt; wird 'geleert'
 
 def nachbarzellen(x, y, vorherige_zahl):
     # Rahmenbedingungen
