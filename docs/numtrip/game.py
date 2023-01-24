@@ -44,7 +44,7 @@ def text_input(text):# es wird validiert ob der Text auch wirklich Text ist
     text = text.upper().strip()
     for h in text:
         if h not in 'ABCDEF':
-            print('Die spalte sollte ein Buchstabe sein')
+            print('Die spalte sollte ein Buchstabe sein!')
             return False
         else:
             return True
