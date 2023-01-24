@@ -62,29 +62,37 @@ def auswerten(zeile, spalte):
     buchstaben = ['A', 'B', 'C', 'D', 'E', 'F']
     spalte = buchstaben.index(spalte.upper()) #string wird in zahl umgewandelt
     zeile = int(zeile) - 1
-    nachbarzellen(zeile, spalte)
-    board[zeile][spalte] = 0# zeile und spalte werden auf null gesetzt; wird 'geleert'
+    vorherige_zahl = board[zeile][spalte]
+    nachbarzellen(zeile, spalte, vorherige_zahl)
+    return zeile, spalte, vorherige_zahl
+    #malzwei = 77
+    # zeile und spalte werden auf null gesetzt; wird 'geleert'
 
-def nachbarzellen(zeile, spalte): #überprüfung der Nachbarszellen
-    zahl = board[zeile][spalte] 
-    board[zeile][spalte] = 0
-    if not zeile == 4 and board[zeile +1][spalte] == zahl: # +1 weil man in der liste boart 'vorwärts'geht und nicht nach oben
-        nachbarzellen(zeile +1, spalte)
-    if not spalte == 5 and board[zeile][spalte +1] == zahl:
-        nachbarzellen(zeile, spalte +1)
-    if not zeile == 0 and board[zeile -1][spalte] == zahl: 
-        nachbarzellen(zeile -1, spalte)
-    if not zeile == 0 and board[zeile][spalte -1] == zahl:
-        nachbarzellen(zeile, spalte -1)
-    drop_cells(zeile, spalte)
-def drop_cells(zeile, spalte):
+def nachbarzellen(x, y, vorherige_zahl):
+    # Rahmenbedingungen
+    if x < 0 or x > 4:
+        return False
+    if y < 0 or y > 4:
+        return False
+    # Feldüberprüfen
+    # im Spielfeld die richtige Liste (zeile), dann richtige Position in Liste (spalte)
+    if board[x][y] == vorherige_zahl:
+        board[x][y] = 0
+        nachbarzellen(x, y + 1, vorherige_zahl)  # rechts
+        nachbarzellen(x, y - 1, vorherige_zahl)  # links
+        nachbarzellen(x + 1, y, vorherige_zahl)  # unten
+        nachbarzellen(x - 1, y, vorherige_zahl)  # oben
+
+def drop_cells(zeile, spalte, vorherige_zahl):
+    board[zeile][spalte] = vorherige_zahl * 2
     for zeilen_idx in [4, 3, 2, 1, 0]:
         for spalten_idx in [0, 1, 2, 3, 4, 5]:
-            index = zeilen_idx
-            while not index <= 0 and board [index][spalten_idx] == 0:
-                index = index -1
-            board[zeilen_idx][spalten_idx] = board[index][spalten_idx] # die gefundene Zelle wird mit der alten gewechhselt
-            board[index][spalten_idx] = 0 # die alte Zelle wird auf null gesetzt
+            if board[zeilen_idx][spalten_idx] == 0:
+                index = zeilen_idx
+                while index > 0 and board [index][spalten_idx] == 0:
+                    index = index -1
+                board[zeilen_idx][spalten_idx] = board[index][spalten_idx] # die gefundene Zelle wird mit der alten gewechhselt
+                board[index][spalten_idx] = 0 # die alte Zelle wird auf null gesetzt
     fill_emptycells()
 
 def fill_emptycells():
@@ -105,6 +113,7 @@ def play():
     while not spielende():
         spielfeld()
         zeile, spalte = eingabe()
-        auswerten(zeile, spalte)
+        zeile, spalte, vorherige_zahl = auswerten(zeile, spalte)
+        drop_cells(zeile, spalte, vorherige_zahl)
 
 play()
