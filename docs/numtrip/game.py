@@ -42,6 +42,10 @@ def verify_input(zeile):
     
 def text_input(text):# es wird validiert ob der Text auch wirklich Text ist
     text = text.upper().strip()
+    if len(text) > 1 :
+        print('Fehlerhafte Eingabe!')
+        return False
+            
     for h in text:
         if h not in 'ABCDEF':
             print('Fehlerhafte Eingabe!')
