@@ -34,8 +34,8 @@ def spielfeld():
     print('')
 
 def verify_input(zeile):
-    if not zeile.isnumeric() or not 5 >= int(zeile) >= 0:
-        print('Die Ziffern müssen Zahlen sein!')
+    if not zeile.isnumeric() or not 5 >= int(zeile) > 0:
+        print('Fehlerhafte Eingabe!')
         return False
     else:
         return True
@@ -44,7 +44,7 @@ def text_input(text):# es wird validiert ob der Text auch wirklich Text ist
     text = text.upper().strip()
     for h in text:
         if h not in 'ABCDEF':
-            print('Die spalte sollte ein Buchstabe sein!')
+            print('Fehlerhafte Eingabe!')
             return False
         else:
             return True
