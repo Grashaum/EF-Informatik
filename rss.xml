@@ -4,7 +4,7 @@
         <title>Lern Blog Blog</title>
         <link>https://Grashaum.github.io/EF-Informatik/</link>
         <description>Lern Blog Blog</description>
-        <lastBuildDate>Fri, 10 Feb 2023 14:16:49 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 10 Feb 2023 14:50:44 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>de</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[2.12.2022]]></title>
             <link>https://Grashaum.github.io/EF-Informatik/2.12.2022</link>
             <guid>/2.12.2022</guid>
-            <pubDate>Fri, 10 Feb 2023 14:16:49 GMT</pubDate>
+            <pubDate>Fri, 10 Feb 2023 14:50:44 GMT</pubDate>
             <description><![CDATA[(Auftrag, Herr Hofer ist krank 🤒)]]></description>
             <content:encoded><![CDATA[<p>(Auftrag, Herr Hofer ist krank 🤒)</p><p>Benutzereingaben -
 besprechen Sie in 2-3er Gruppen, wie Sie Ihre Benutzereingabe implementiert haben. Versuchen Sie auch, sich gegenseitig zu helfen und in den Code reinzudenken, wenn es noch Probleme gibt</p><p>Selbständig weiterarbeiten an Numtrip:
@@ -26,7 +26,7 @@ ev. 👉 Felder Auffüllen</p><p>Wichtig: In den letzten 10-15 Minuten halten Si
             <title><![CDATA[Numtrip-blog]]></title>
             <link>https://Grashaum.github.io/EF-Informatik/Numtrip-blog</link>
             <guid>/Numtrip-blog</guid>
-            <pubDate>Fri, 10 Feb 2023 14:16:49 GMT</pubDate>
+            <pubDate>Fri, 10 Feb 2023 14:50:44 GMT</pubDate>
             <description><![CDATA[Benutzeringabe]]></description>
             <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="benutzeringabe">Benutzeringabe<a class="hash-link" href="#benutzeringabe" title="Direkter Link zur Überschrift">​</a></h3><p>Als 1. habe ich mir ein Konzept überlegt, die Koordinaten eines bestimmten Feldes zu definieren. Ich bin auf Koordinaten aus Zahlen und Buchstaben gekommen. So ist es für mich persöhnlich praktischer, die Zeilen und Spalten zu unterscheiden (Spalten: Buchst., Zeilen: Zahlen)</p><p>Die Beiden eingaben müssen noch validiert werden:
 dafür habe ich mich entschieden, für beide eine einzelne Funktion zu schreiben, was für einige schwierigkeiten geführt hat, da ich die ganze formel zweimal schreiben musste... es hat nach ein paar versuchen jedoch geklappt.</p><p>in der Funktion auswerten werden die Buchstaben in Zahlen umbewandelt</p><blockquote><p>def auswerten(zeile, spalte):</p><p>   buchstaben = <!-- -->['A', 'B', 'C', 'D', 'E', 'F']</p><p>   spalte = buchstaben.index(spalte.upper())
@@ -36,7 +36,7 @@ zeile = int(zeile) - 1</p><p>   print(zeile)</p><p>   board<!-- -->[zeile][spalt
             <title><![CDATA[Finaler Blog-Beitrag]]></title>
             <link>https://Grashaum.github.io/EF-Informatik/finaler game-blog</link>
             <guid>/finaler game-blog</guid>
-            <pubDate>Fri, 10 Feb 2023 14:16:49 GMT</pubDate>
+            <pubDate>Fri, 10 Feb 2023 14:50:44 GMT</pubDate>
             <description><![CDATA[Ziel des Spiels]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ziel-des-spiels">Ziel des Spiels<a class="hash-link" href="#ziel-des-spiels" title="Direkter Link zur Überschrift">​</a></h2><p>Unterhaltung:) </p><p>das finale Ziel ist es, 2048 Punkte zu erreichen.
 Das geht dadurch, dass die Zahlen immer adddiert werden wenn sie angeklickt werden.
