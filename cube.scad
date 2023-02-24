@@ -1,3 +1,9 @@
+scale(100)
+        rotate([90, 0, 0])
+        import("canned_food_01.stl", convexity=3);
+
+
+
 union() {
     cube([3, 1, 1]);
     translate([1, 1, 0])
