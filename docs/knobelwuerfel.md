@@ -1,4 +1,4 @@
-![](cube%20picture.png)
+![](pictures2/cube%20picture.png)
 union() {
     cube([3, 1, 1]);
     translate([1, 1, 0])
