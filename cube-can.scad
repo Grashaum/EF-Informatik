@@ -1,19 +1,3 @@
-translate([70, 60, 0])
-scale([500, 500, 1050])
-rotate([90, 0, 0])
-import("canned_food_01.stl", convexity=3);
-union() {
-difference() {
-    union() {
-        translate([20, 60, 0])
-        scale([500, 500, 1050])
-        rotate([90, 0, 0])
-        import("canned_food_01.stl", convexity=3);
-    }
-    translate([60, 50, 0])
-    cube([60, 60, 30]);
-}
-}
 // MODIFY BELOW VARIABLES TO CUSTOMIZE
 /*
 
@@ -166,15 +150,18 @@ module display_hole() {
     translate([center_x,center_y, 0.5])
         scale([DISPLAY_HEIGHT, DISPLAY_WIDTH, 1])
             rotate([0,0,45])
-                cylinder(h=WALL_THICKNESS,r1=1/sqrt(2), r2=1.5/sqrt(2),$fn=4);
+        cylinder(h=WALL_THICKNESS,r1=1/sqrt(2), r2=1.5/sqrt(2),$fn=4);
 }
-
+module txt() {
+    translate([BOX_X / 2, 0.25 * BOX_WALL, BOX_Z / 2])
+    rotate([0, 0, 0])
+        linear_extrude(5)
+            text("Grashaum", size=4, halign="center", valign="center");
+}
 module sensor_hole(size) {
-    r = size / 2; 
-    translate([r, 0, r])
-        rotate([-90, 0, 0])
-            rotate([0,0,45])
-                cylinder(h=WALL_THICKNESS+0.02, r1=sqrt(2)*size, r2=size / sqrt(2), $fn=4);
+    translate([0, 0, 0])
+        rotate([0, 0, 0])
+                cylinder(h=WALL_THICKNESS+4, r1=sqrt(2)*size, r2=size / sqrt(2), $fn=4);
 
 }
 
@@ -184,7 +171,9 @@ module box() {
             // OUTER BOX
             translate([-WALL_THICKNESS, -WALL_THICKNESS, -WALL_THICKNESS])
                 cube([BOX_X_OUTER, BOX_Y_OUTER, BOX_Z_OUTER]);
-
+            translate([BOX_X_OUTER/2, BOX_Z_OUTER/2,1])
+            rotate([180,0,0])    
+                txt();
             // INNER BOX
             translate([0, -WALL_THICKNESS-0.1, 0])
                 cube([BOX_X,BOX_Y+0.1,BOX_Z]);
