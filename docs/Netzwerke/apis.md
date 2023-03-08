@@ -1,7 +1,7 @@
 # Cheat-sheet ##
 
 
-### Was ist eine API?
+### What is an API?
 APIs (application programming interfaces)
 
 An API is the tool that makes a website's data digestible for a computer. Through it, a computer can view and edit data, just like a person can by loading pages and submitting forms.
@@ -24,7 +24,7 @@ The client has to include the following things:
     A unique address for a thing. official name: resource
 
     Url's are a easy way for the cloent to tell the server which thin it wants to interact with.
-  * Methoden
+  * Methods
 
     GET - Asks the server to retrieve a resource
 
@@ -36,7 +36,12 @@ The client has to include the following things:
 
   * Headers
 
+    They provide meta-information about a request. They are a simple list of items like the time the client sent the request and the size of the request body.
   * Body
+
+    The request body contains the data the client wants to send the server. This is the only part of the request the client has complete control over .
+
+![](docs/pictures2/http.PNG)
 
 ### HTTP Status Codes
 
