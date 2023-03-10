@@ -4,16 +4,26 @@
 ### What is an API?
 APIs (application programming interfaces)
 
-An API is the tool that makes a website's data digestible for a computer. Through it, a computer can view and edit data, just like a person can by loading pages and submitting forms.
+An API is the tool that makes a website's data digestible for a computer. Through it, a computer can view and edit data, just like a person can by loading pages and submitting forms. APIs make it easy to share data between two systems.
 
 API is provided by the server.
 
 When one site pulls in data from the other, the site providing the data is acting as the server, and the site fetching the data is the client.
 
-### JSON Format
+### JSON Format (JavaScript Object Notation)
+
 List with values that have names
 
-### XML Format
+JSON is a very simple format that has two pieces:
+* Key: an attribute about an object (size, toppings...)
+* Value: the value of an attribute (small, pepperoni...)
+
+### XML Format (Extensible Markup Language)
+
+XML always starts with a root node inside the order are more "child" nodes. 
+
+![](node.PNG)
+The XML format requires a lot more text to communicate than JSON does.
 
 ### HTTP Request:
 Communication in HTTP centers around a concept called the Request-Response Cycle. The client sends the server a request to do something. The server, in turn, sends the client a response saying whether or not the server could do what the client asked.
@@ -41,10 +51,12 @@ The client has to include the following things:
 
     The request body contains the data the client wants to send the server. This is the only part of the request the client has complete control over .
 
-![](docs/pictures2/http.PNG)
+![](http.PNG)
 
+The response headers and body follow the same format as requests.
 ### HTTP Status Codes
 
-### Endpunkte
-
+Status codes are three-digit numbers that each have a unique meaning. When used correctly in an API, this little number can communicate a lot of info to the client. For example, you may have seen this page during your internet wanderings.
 ### Polling
+Polling is a way to keep the client updated about what is happening on the website or with the data they requested.
+The more frequently the client makes requests (polls), the closer the client gets to real-time communication.
