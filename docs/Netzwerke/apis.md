@@ -24,7 +24,9 @@ XML always starts with a root node inside the order are more "child" nodes.
 
 ![](node.PNG)
 The XML format requires a lot more text to communicate than JSON does.
+###HTTPS
 
+This works the same as HTTP. The difference being the S standing for secure.
 ### HTTP Request:
 Communication in HTTP centers around a concept called the Request-Response Cycle. The client sends the server a request to do something. The server, in turn, sends the client a response saying whether or not the server could do what the client asked.
 
@@ -38,9 +40,9 @@ The client has to include the following things:
 
     GET - Asks the server to retrieve a resource
 
-    POST - Asks the server to create a new resource
+    POST - Asks the server to create a new resource. They always have a body & headers (as described below)
 
-    PUT - Asks the server to edit/update an existing resource
+    PUT - Asks the server to edit/update an existing resource. The entire resource gets changed.
     
     DELETE - Asks the server to delete a resource
 
@@ -60,3 +62,5 @@ Status codes are three-digit numbers that each have a unique meaning. When used 
 ### Polling
 Polling is a way to keep the client updated about what is happening on the website or with the data they requested.
 The more frequently the client makes requests (polls), the closer the client gets to real-time communication.
+
+An API defines endpoints so the https so they lead the client to the right address.
