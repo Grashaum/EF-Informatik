@@ -15,6 +15,8 @@ Router: verbinden verschiedene LAN's miteinander. Oft benutzt man geräte, die s
 
 Hosts sind allgemein geräte, die nachrichten senden und empfangen.
 
+Gateway
+
 ## 4. IP-Adressen
 * Nertwerkteil
         
@@ -25,15 +27,18 @@ Hosts sind allgemein geräte, die nachrichten senden und empfangen.
     Hinterer Teil der IP-Adresse.
     Er ist für jedes Gerät (auf englisch Host genannt) unterschiedlich. Es dürfen keine zwei Geräte im selben Netz den selben Hostteil in ihrer IP-Adresse aufweisen.
 
+Diese Netzmaske sieht zunächst wie eine IP-Adresse aus, d.h. sie besteht auch aus vier Zahlen von je einem Byte Länge.
 
+Ergänzt man den Netzwerkteil mit lauter 0 zu einer vollen 32 Bit langen IP-Adresse, so erhält man die Netzwerkadresse.
 
+Die Netzwerkadresse wird gebraucht, wenn mehrere Netzwerke miteinander über Router verbunden werden. Sie darf nicht als IP-Adresse für ein einzelnes Gerät verwendet werden!
+
+Auch bei den IP-Adressen gibt es Broadcastadressen (wie bei den MAC-Adressen). Sie werden gebraucht, wenn ein IP-Paket an alle Geräte innerhalb eines Netzwerkes gesendet werden sollen. Im Unterschied zur MAC-Adresse kann man aber auch ein IP-Paket an alle Geräte in einem anderen Netzwerk, als dem eigenen senden.
+
+Pakete aus dem Internet für den Weitertransport im privaten Netzwerk erhalten eine private IP-Adresse.
+
+## 5. Schichtenmodell
 MAC-Adresse
-
-IP Adresse
-
-
-
-Gateway
 
 Mac-Tabelle
 
@@ -42,5 +47,3 @@ Routing-Tabelle
 Ethernet-Frame
 
 ARP
-
-Switch
