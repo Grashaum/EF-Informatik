@@ -4,7 +4,7 @@ Sich ausdenken was man genau machen will -> in meinem Fall eine Api, die text in
 Schauen, ob man alles hat, was man braucht -> in meinem Fall Postman und ein node-red-login
  
  
-![](silly%20duck.PNG)
+![](networkpictures/silly%20duck.PNG)
 Dann wird ein einfacher flow aufgebaut, der eine http frage annimmt, den Inhalt umwandelt und eine Antwort zurückschickt.
 
 ## Wichtig: ## 

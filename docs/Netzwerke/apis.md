@@ -22,7 +22,7 @@ JSON is a very simple format that has two pieces:
 
 XML always starts with a root node inside the order are more "child" nodes. 
 
-![](node.PNG)
+![](networkpictures/node.PNG)
 The XML format requires a lot more text to communicate than JSON does.
 ###HTTPS
 
@@ -53,7 +53,7 @@ The client has to include the following things:
 
     The request body contains the data the client wants to send the server. This is the only part of the request the client has complete control over .
 
-![](http.PNG)
+![](networkpictures/http.PNG)
 
 The response headers and body follow the same format as requests.
 ### HTTP Status Codes
