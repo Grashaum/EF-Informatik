@@ -40,20 +40,18 @@ Pakete aus dem Internet für den Weitertransport im privaten Netzwerk erhalten e
 ## 5. Schichtenmodell
 OSI model
 networking is divided in 7 layers. they all have to work simultaneously so two hosts can share data.
-* physisch: etwas muss die Bits transportieren. alles, dass dabei hilft, bits zu transportieren, gehört zur ersten schicht. Wi-Fi gehört auch zu dieser Kategorie. auch repeaters und hubs gehören dazu. 
-* Data Link: Etwas, dass bits verschickt und annimmt. es interagiert mit den bits. z.B switchh oder Internet geräte.
+* physisch/Netzzugangsschicht: etwas muss die Bits transportieren. alles, dass dabei hilft, bits zu transportieren, gehört zur ersten schicht. Wi-Fi gehört auch zu dieser Kategorie. auch repeaters und hubs gehören dazu. 
+* Data Link/Internet-Schicht: Etwas, dass bits verschickt und annimmt. es interagiert mit den bits. z.B switchh oder Internet geräte.
 * end to end/Network: jeder host hat eine eigene IP adresse. damit kann data an spezifische Geräte geschickt werden kann.
 MAC-Adresse
 diese Adresse besitzt nicht die IP adresse, sondern lediglich eine Information wo die data gerade war und wo sie als nächstes hin muss. also nicht anfangs- und endadresse, sondern schritt für schritt. diese wird dann auch verändert, wenn die data durch das Internet "saust".
+ARP: dieses Konzept verbindet MAC und IP adressen zu einem adressen-paket
 * transport: hat auch eine eigene Art adressen-art. jede art data wird mit einer art Identifizierung ausgestattet, damit man weis was für eine Art data das ist. TCP ist auf vertraulichkeit basiert und UDP auf effizienz
 * anwendungsschicht
 spezialisierte Protokolle für bestimmte Anwendungen. wie z.B. TLS füs security (z.B. HTTPS)
 ![](networkpictures/selbsttest.PNG)
-
+![](networkpictures/capsulation.png)
 Mac-Tabelle
 
 Routing-Tabelle
-
 Ethernet-Frame
-
-ARP
