@@ -46,8 +46,9 @@ networking is divided in 7 layers. they all have to work simultaneously so two h
 MAC-Adresse
 diese Adresse besitzt nicht die IP adresse, sondern lediglich eine Information wo die data gerade war und wo sie als nächstes hin muss. also nicht anfangs- und endadresse, sondern schritt für schritt. diese wird dann auch verändert, wenn die data durch das Internet "saust".
 * transport: hat auch eine eigene Art adressen-art. jede art data wird mit einer art Identifizierung ausgestattet, damit man weis was für eine Art data das ist. TCP ist auf vertraulichkeit basiert und UDP auf effizienz
-
-
+* anwendungsschicht
+spezialisierte Protokolle für bestimmte Anwendungen. wie z.B. TLS füs security (z.B. HTTPS)
+![](networkpictures/selbsttest.PNG)
 
 Mac-Tabelle
 
