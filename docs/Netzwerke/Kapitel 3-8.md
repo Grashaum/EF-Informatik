@@ -50,7 +50,16 @@ ARP: dieses Konzept verbindet MAC und IP adressen zu einem adressen-paket
 * anwendungsschicht
 spezialisierte Protokolle für bestimmte Anwendungen. wie z.B. TLS füs security (z.B. HTTPS)
 ![](networkpictures/selbsttest.PNG)
+Kapselung
 ![](networkpictures/capsulation.png)
+
+## 6. Netzwerkzugangsschicht
+
+* Szenario 1
+
+Die beiden Computer sind im Gleichen Netzwerk und direkt miteinander verbunden
+
+* Szenario 2
 Mac-Tabelle
 
 Routing-Tabelle
