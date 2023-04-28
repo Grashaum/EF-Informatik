@@ -17,6 +17,10 @@ Hosts sind allgemein geräte, die nachrichten senden und empfangen.
 
 Gateway
 
+Gateways und Router ähneln sich insofern, als sie beide zur Regulierung des Datenverkehrs zwischen Netzen eingesetzt werden können. Ein Router wird jedoch verwendet, um zwei ähnliche Netzwerktypen zu verbinden, während ein Gateway dazu dient, zwei unterschiedliche Netze zu verbinden. Als unähnlich können Netze bezeichnet werden, die unterschiedliche Primärprotokolle verwenden.
+
+Aufgrund dieser Logik kann ein Router als Gateway betrachtet werden, aber ein Gateway ist nicht immer ein Router. Router sind die gängigsten Gateways, die für die Verbindung eines Heim- oder Unternehmensnetzwerks mit dem Internet verwendet werden.
+
 ## 4. IP-Adressen
 * Nertwerkteil
         
@@ -88,11 +92,19 @@ Was für Schritte braucht es, um zu Kommunizieren?
     Was der Router nun wissen muss:
 
     die IP- und MAC-Adresse der nächsten Router und Hosts. Dieser Prozess wird wiederholt, bis die daten am Ziel sind.
+## 7. Routing
 
+Eine der wichtigsten Aufgaben der Internetschicht ist, das Vermitteln von Paketen duch die verbundenen Netzwerke hindurch und zwar vom Augangsort bis zum Ziel. Jedes Gerät, egal ob Computer oder Router, muss dies tun, wenn es ein Paket senden will. Man spricht vom Routing.
 
+* Routing-Tabelle
 
+    Routenziel, welches über diese Route erreicht werden kann
+
+    Falls das Routenziel nicht im eigenen Netzwerk liegt, die IP-Adresse des Gateways über welchen man aus dem eigenen Netzwerk herauskommt
+
+    Identifikation des Netzwerkadapters (Schnittstelle) am eigenen Gerät, über welchen das IP-Paket entweder direkt an das Routenziel (wenn dieses im eigenen Netzwerk liegt), oder an den Gateway gesendet werden kann
 
 Mac-Tabelle
 
-Routing-Tabelle
+
 Ethernet-Frame
