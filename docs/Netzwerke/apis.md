@@ -24,7 +24,7 @@ XML always starts with a root node inside the order are more "child" nodes.
 
 ![](networkpictures/node.PNG)
 The XML format requires a lot more text to communicate than JSON does.
-###HTTPS
+### HTTPS
 
 This works the same as HTTP. The difference being the S standing for secure.
 ### HTTP Request:
