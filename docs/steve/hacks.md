@@ -19,3 +19,7 @@ ctrl + klick = geht zu definition
     ''.join--> kombiniert die liste aus strings
 
 '! gimme a '.join(sorted('potter')) + '! potter!'--> man kann strings + rechnen
+
+fn + f3 = suchen auf der aktuellen seite
+
+windows + L = bildschirmschoner
