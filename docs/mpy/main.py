@@ -1,5 +1,6 @@
 import network
 # WLAN als Empfangsstation initialisieren
+#
 import time
 import machine
 import ssd1306
