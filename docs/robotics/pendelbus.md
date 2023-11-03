@@ -1,1 +1,1 @@
-![](robotics/premium.jpg)
+![](robotics/shuttle.jpg)
