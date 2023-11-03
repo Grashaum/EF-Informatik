@@ -1,1 +1,2 @@
-![](robotics/shuttle.jpg)
+![](robotics/shuttle.png)
+![](robotics/stalt.png)
